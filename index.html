@@ -30,6 +30,7 @@
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#preco">Preço</a></li>
                     <li><a href="#qualidade">Qualidade</a></li>
+                    <li><a data-modal="abrir" href="login.html">￫Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -157,7 +158,24 @@
     <footer class="footer">
         <p>FlexBlog © Todos os direitos reservados.</p>
     </footer>
-    <script src="script/script.js"></script>
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">x</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
+                <div class="botoes">
+                    <button type="submit">Entrar</button>
+                    <button class="cadastrar" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="script/script.js"></script>
 </body>
 
 </html>
